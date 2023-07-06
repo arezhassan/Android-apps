@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="390dp"
+    android:layout_height="168dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/productcard"
+        android:layout_width="360dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="4dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hapticFeedbackEnabled="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/productphoto"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#22C6BEBE"
+                android:elevation="10dp"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/s22" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/productname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="30dp"
+
+            android:fontFamily="@font/tauri"
+            android:letterSpacing="-0.06"
+            android:lineSpacingExtra="30dp"
+            android:text="Samsung S22"
+            android:textAlignment="center"
+            android:textColor="#B2000000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/viewdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="2dp"
+            android:drawableEnd="@drawable/baseline_info_24"
+            android:fontFamily="@font/tauri"
+            android:textAllCaps="false"
+            android:textColor="#97000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Smartphones"
+            android:textAlignment="viewStart"
+            android:textColor="#CD000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/productval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="62dp"
+            android:fontFamily="@font/tauri"
+            android:letterSpacing="-0.06"
+            android:text="Rs. 100,000"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/cartphoto"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="85dp"
+            android:src="@drawable/carticonblack"
+            app:srcCompat="@drawable/carticonblack" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="48dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="100dp"
+            app:srcCompat="@drawable/review" />
+
+        <TextView
+            android:id="@+id/reviewtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="185dp"
+            android:layout_marginTop="112.5dp"
+            android:fontFamily="@font/tauri"
+            android:text="4.5/5"
+            android:textColor="#CD000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "529886378280",
+    "project_id": "luxuria-0709",
+    "storage_bucket": "luxuria-0709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529886378280:android:f473241289e424c429381d",
+        "android_client_info": {
+          "package_name": "com.example.luxuria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529886378280-i92gngugg590t02icd6hgm62bobm24mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDODBPv7YSSQ9K7C54Srlmf11dY9b0mQhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "529886378280-i92gngugg590t02icd6hgm62bobm24mk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#000000" /> <!-- Set the background color of the circle -->
+    <corners android:radius="300dp" />
+    <gradient android:startColor="@color/white"/>
+    <gradient android:endColor="@color/teal_200"/>
+    <!-- Set the radius to 50% to create a perfect circle -->
+</shape>

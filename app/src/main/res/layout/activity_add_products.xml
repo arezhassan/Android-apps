@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad">
+
+    <Button
+        android:id="@+id/btnAddProduct"
+        android:layout_width="330dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="sans-serif"
+        android:text="Add Product"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/uploadpic"
+        android:layout_width="330dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="51dp"
+        android:backgroundTint="#32BD00"
+        android:fontFamily="sans-serif"
+        android:text="Add Image from Gallery"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logonobg" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddProduct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="365dp"
+            android:layout_height="261dp"
+            app:cardBackgroundColor="@color/purple_200"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp">
+
+
+            <EditText
+                android:id="@+id/adminproductname"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif"
+                android:hint="Product Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/adminproductprice"
+                android:layout_width="300dp"
+                android:layout_height="56dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="sans-serif"
+                android:hint="Product Price"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/adminproductid"
+                android:layout_width="300dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="33dp"
+                android:layout_marginTop="170dp"
+                android:fontFamily="sans-serif"
+                android:hint="Product ID"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

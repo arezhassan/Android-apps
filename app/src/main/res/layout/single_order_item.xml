@@ -1,0 +1,112 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="256dp"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="10dp">
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="82dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_card_view" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/order_card_view"
+        android:layout_width="343dp"
+        android:layout_height="236dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Order ID -->
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="64dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="260dp"
+            app:srcCompat="@drawable/orders" />
+
+        <TextView
+            android:id="@+id/order_id_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/tauri"
+            android:letterSpacing="0.04"
+            android:text="Order ID: ABC123"
+            android:textColor="#B2000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Order ID: ABC123" />
+
+        <!-- Order Bill -->
+        <TextView
+            android:id="@+id/order_bill_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="-0.05"
+            android:text="Order Bill: $100"
+            android:textColor="#B3000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/order_id_text"
+            tools:text="Order Bill: $100" />
+
+        <!-- Order Status -->
+        <TextView
+            android:id="@+id/order_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="200dp"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.05"
+            android:text="Order Status: Completed"
+            android:textColor="#B3000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/order_bill_text"
+            tools:text="Order Status: Completed" />
+
+        <!-- Product Names -->
+        <TextView
+            android:id="@+id/product_names_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="-0.05"
+            android:text="Product Names: Item 1, Item 2, Item 3"
+            android:textColor="#B3000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/order_status_text"
+            tools:text="Product Names: Item 1, Item 2, Item 3" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
